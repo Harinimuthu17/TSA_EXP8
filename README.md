@@ -63,11 +63,11 @@ plt.show()
 
 # Moving Average
 # Perform rolling average transformation with a window size of 10
-rolling_mean_10 = adj_close_data['open'].rolling(window=10).mean()
+rolling_mean_10 = adj_close_data['Open'].rolling(window=10).mean()
 
 # Plot Moving Average
 plt.figure(figsize=(8, 4))
-plt.plot(adj_close_data['open'], label='Original Adj Close Data', color='blue')
+plt.plot(adj_close_data['Open'], label='Original Adj Close Data', color='blue')
 plt.plot(rolling_mean_10, label='Moving Average (window=10)', color='orange')
 plt.title('Moving Average')
 plt.xlabel('Date')
